@@ -1,0 +1,40 @@
+# System Specific config
+# source ~/.bashrc
+if hash vim 2>/dev/null; then
+    alias editor=vim
+else
+    echo "Default editor not on $PATH"
+fi
+
+source ~/.zsh_system
+alias sysprof='editor ~/.zsh_system'
+
+# Enable source control of dotfiles from home directory without symlinks:
+# https://www.atlassian.com/git/tutorials/dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias ll='ls -lh'
+
+# .dotfile shortcuts
+alias vimrc="editor ./.vimrc"
+alias prof="editor ~/.zsh_profile"
+alias runprof=". ~/.zsh_profile"
+
+# Aliases:
+alias g="git"
+alias fclear="printf '\033c'"
+
+# Bash-completion
+# [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+# 	    . /usr/share/bash-completion/bash_completion
+
+zstyle ':completion:*:git:*' script ~/.git-completion.zsh
+fpath=(~/.zsh $fpath)
+
+# Git
+source ~/.git-prompt.sh
+# source ~/.git-completion.bash
+# source ~/.git-completion.zsh
+
+# Prompt
+PS1="%c$(__git_ps1)\$ "

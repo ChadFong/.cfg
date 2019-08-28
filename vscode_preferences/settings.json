@@ -1,0 +1,20 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "vim.leader": "<Space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+}
+
