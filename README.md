@@ -3,7 +3,7 @@ Repo for dotfile configuration, set up to clone directly to $HOME
 
 [Source](https://www.atlassian.com/git/tutorials/dotfiles)
 
-##Steps
+## Steps
 
 Set up this alias to enable `config` as the git command for the `$HOME` directory:
 `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
