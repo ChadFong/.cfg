@@ -9,7 +9,31 @@
         {
             "before": ["k", "j"],
             "after": ["<Esc>"]
-        }
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "d"],
+            "after": [
+                "I", "d", "e", "s", "c", "r", "i", "b", "e", "(", "'", "<Esc>",
+                "A", "'", ",", " ", "(", ")", " ", "=", ">", " ", "{", "}", "<Esc>",
+                "i", "<Enter>", "<Esc>",
+                "j",
+                "A", ")", ";", "<Esc>",
+                "k", "d", "d"
+            ]
+        },
+        {
+            "before": ["<leader>", "i"],
+            "after": [
+                "I", "i", "t", "(", "'", "<Esc>",
+                "A", "'", ",", " ", "(", ")", " ", "=", ">", " ", "{", "}", "<Esc>",
+                "i", "<Enter>", "<Esc>",
+                "j",
+                "A", ")", ";", "<Esc>",
+                "k", "d", "d"
+            ]
+        },
     ],
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
@@ -17,4 +41,3 @@
     "window.zoomLevel": 0,
     "typescript.updateImportsOnFileMove.enabled": "always",
 }
-
