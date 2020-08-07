@@ -1,3 +1,7 @@
+autoload -Uz compinit && compinit
+autoload -U colors && colors
+autoload -Uz vcs_info
+
 # System Specific config
 # source ~/.bashrc
 if hash vim 2>/dev/null; then
@@ -14,9 +18,10 @@ alias sysprof='editor ~/.zsh_system'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias ll='ls -lh'
+alias clearBranches='git branch | grep -v "master" | xargs git branch -D'
 
 # .dotfile shortcuts
-alias vimrc="editor ./.vimrc"
+alias vimrc="editor ~/.vimrc"
 alias prof="editor ~/.zsh_profile"
 alias runprof=". ~/.zsh_profile"
 
@@ -24,17 +29,18 @@ alias runprof=". ~/.zsh_profile"
 alias g="git"
 alias fclear="printf '\033c'"
 
-# Bash-completion
-# [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-# 	    . /usr/share/bash-completion/bash_completion
-
-zstyle ':completion:*:git:*' script ~/.git-completion.zsh
-fpath=(~/.zsh $fpath)
-
 # Git
 source ~/.git-prompt.sh
-# source ~/.git-completion.bash
-# source ~/.git-completion.zsh
+
+zstyle ':vcs_info:*' enable git
+zstyle ':completion:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
 
 # Prompt
-PS1="%c$(__git_ps1)\$ "
+precmd() {
+    vcs_info
+}
+
+setopt PROMPT_SUBST
+PS1='%B%F{180}%c%F{1}$(__git_ps1 " (%s) ") %F{196}𝝺 %f%b'
+
