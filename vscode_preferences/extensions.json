@@ -1,6 +1,9 @@
 {
-    "recommendations": {
-        "vscodevim.vim",
-        "CoenraadS.bracket-pair-colorizer-2"
-    }
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "vscodevim.vim",
+    "eamodio.gitlens",
+    "CoenraadS.bracket-pair-colorizer-2"
+  ]
 }
