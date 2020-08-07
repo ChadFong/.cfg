@@ -10,6 +10,7 @@ else
     echo "Default editor not on $PATH"
 fi
 
+source ~/.sysprof
 source ~/.zsh_system
 alias sysprof='editor ~/.zsh_system'
 
