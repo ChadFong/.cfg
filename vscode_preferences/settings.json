@@ -1,43 +1,109 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "vim.leader": "<Space>",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["k", "j"],
-            "after": ["<Esc>"]
-        },
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["<leader>", "d"],
-            "after": [
-                "I", "d", "e", "s", "c", "r", "i", "b", "e", "(", "'", "<Esc>",
-                "A", "'", ",", " ", "(", ")", " ", "=", ">", " ", "{", "}", "<Esc>",
-                "i", "<Enter>", "<Esc>",
-                "j",
-                "A", ")", ";", "<Esc>",
-                "k", "d", "d"
-            ]
-        },
-        {
-            "before": ["<leader>", "i"],
-            "after": [
-                "I", "i", "t", "(", "'", "<Esc>",
-                "A", "'", ",", " ", "(", ")", " ", "=", ">", " ", "{", "}", "<Esc>",
-                "i", "<Enter>", "<Esc>",
-                "j",
-                "A", ")", ";", "<Esc>",
-                "k", "d", "d"
-            ]
-        },
-    ],
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "editor.detectIndentation": false,
-    "window.zoomLevel": 0,
-    "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.renderSideBySide": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "vim.leader": "<Space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "after": [
+        "I",
+        "d",
+        "e",
+        "s",
+        "c",
+        "r",
+        "i",
+        "b",
+        "e",
+        "(",
+        "'",
+        "<Esc>",
+        "A",
+        "'",
+        ",",
+        " ",
+        "(",
+        ")",
+        " ",
+        "=",
+        ">",
+        " ",
+        "{",
+        "}",
+        "<Esc>",
+        "i",
+        "<Enter>",
+        "<Esc>",
+        "j",
+        "A",
+        ")",
+        ";",
+        "<Esc>",
+        "k",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": [
+        "I",
+        "i",
+        "t",
+        "(",
+        "'",
+        "<Esc>",
+        "A",
+        "'",
+        ",",
+        " ",
+        "(",
+        ")",
+        " ",
+        "=",
+        ">",
+        " ",
+        "{",
+        "}",
+        "<Esc>",
+        "i",
+        "<Enter>",
+        "<Esc>",
+        "j",
+        "A",
+        ")",
+        ";",
+        "<Esc>",
+        "k",
+        "d",
+        "d"
+      ]
+    }
+  ],
+  "files.trimTrailingWhitespace": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.format.semicolons": "insert"
 }
