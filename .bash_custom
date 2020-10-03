@@ -1,0 +1,16 @@
+# System Specific config
+alias editor=vim
+
+# .dotfile shortcuts
+alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias vimrc="editor ~/.vimrc"
+alias prof="editor ~/.bash_custom"
+alias runprof=". ~/.bash_custom"
+
+alias g="git"
+
+# # Bash-completion
+# Being handled in bashrc?
+# [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+# 	    . /usr/share/bash-completion/bash_completion
+#
