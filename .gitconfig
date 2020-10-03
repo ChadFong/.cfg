@@ -1,0 +1,10 @@
+[alias]
+    s = status
+    a = add
+    c = commit
+    d = diff
+    b = branch
+    co = checkout
+    cob = checkout -b
+    h = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
