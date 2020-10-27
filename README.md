@@ -12,7 +12,7 @@ Ignore the folder where you'll clone your dotfiles, so that you don't create wei
 `echo ".cfg" >> .gitignore`
 
 Clone the dotfiles into a bare repository in a "dot" folder of your $HOME:
-`git clone --bare https://github.com/ChadFong/.cfg.git $HOME/.cfg`
+`git clone --bare git@github.com:ChadFong/.cfg.git $HOME/.cfg`
 
 Checkout the actual content from the bare repository to your $HOME:
 `config checkout`
